@@ -11,7 +11,8 @@ void compress(char * input,char * output){
             count=1;
         }
     }
-    printf("compressed : %s%c%d",output,input[i-1],count);
+   
+    printf(" %s%c%d",output,input[i-1],count);
     
 }
 void decompress(char *input,char *output){
@@ -28,6 +29,7 @@ void main(){
     char input[100],output[100];
     printf("enter a string");
     scanf("%s",input);
+    printf("encoded is:");
     compress(input,output);
    
 }
